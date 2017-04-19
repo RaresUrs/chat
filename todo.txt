@@ -1,0 +1,25 @@
+1.a) Database and Chat:
+
+  Schema:
+  -ObjectID
+  -email
+  -username
+  -join Date(Auto)
+  -friends(outer join with friends table)
+
+->Users DB: should hold the name/email/username of the user from auth0
+->Make chat between 2 users private(Must be stored in a db, connection between friends).
+->Make IN GAME chat public between all users that are playing(Must not be stored, connection for random people).
+->Make IN GAME chat private for teams(Must not be stored in DB, connection for random people).
+->List of friends that you could chat with(See 2).
+
+1.b) Database Friends
+
+  Schema:
+  -TBT
+-> Friends database: should hold all friendship between users.
+
+2) Search users
+->Search for name/email/username.
+->Add friend.
+->Accept friend.
